@@ -10,7 +10,7 @@ environment:
 
 clone_folder: c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-exporter
 
-#install:
+install:
   - go version
   - set PATH=%GOPATH%\bin;c:\go\bin;%GOPATH%\bin\windows_%GOARCH%;%PATH%
 #  - go get -u github.com/prometheus/promu
