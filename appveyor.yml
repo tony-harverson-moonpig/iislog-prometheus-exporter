@@ -23,6 +23,7 @@ build_script:
   - ps: build.ps1
 
 artifacts:
-  - name: Package
+  - name: Executable
     path: 'bin/*.exe'
+  - name: Config
     path: 'bin/*.hcl'
