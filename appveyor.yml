@@ -17,7 +17,7 @@ install:
   - set PATH=%GOPATH%\bin;c:\go\bin;%GOPATH%\bin\windows_%GOARCH%;%PATH%
   - go get -u github.com/prometheus/promu
   - choco install gitversion.portable -y
-  - set-content c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-exporter\VERSION "hello"
+  - echo "hi there >" c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-exporter\VERSION
 
 build_script:
   - ps: gitversion /output json /showvariable FullSemVer | Set-Content -force VERSION -PassThru
