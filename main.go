@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/GrupaPracuj/iislog-prometheus-exporter/config"
-	"github.com/GrupaPracuj/iislog-prometheus-exporter/logging"
+	"./logging"
 	"github.com/GrupaPracuj/iislog-prometheus-exporter/service"
 	"github.com/GrupaPracuj/iislog-prometheus-exporter/version"
 	"github.com/mitchellh/cli"
