@@ -11,8 +11,8 @@ environment:
 clone_folder: c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-exporter
 
 #install:
-#  - go version
-#  - set PATH=%GOPATH%\bin;c:\go\bin;%GOPATH%\bin\windows_%GOARCH%;%PATH%
+  - go version
+  - set PATH=%GOPATH%\bin;c:\go\bin;%GOPATH%\bin\windows_%GOARCH%;%PATH%
 #  - go get -u github.com/prometheus/promu
 #  - choco install gitversion.portable -y
 #  - echo "hi there" > c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-exporter\VERSION
@@ -22,7 +22,7 @@ build_script:
   - ps: ./build.ps1
 #
 #artifacts:
-#  - name: Executable
-#    path: 'bin/*.exe'
+  - name: ZipMeUp
+    path: 'bin/*.*'
 #  - name: Config
 #    path: 'bin/*.hcl'
