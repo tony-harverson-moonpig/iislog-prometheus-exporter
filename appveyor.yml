@@ -19,7 +19,7 @@ install:
   - choco install gitversion.portable -y
 
 build_script:
-  - ps: gitversion /output json /showvariable FullSemVer | Set-Content VERSION -PassThru
+  - ps: gitversion /output json /showvariable FullSemVer | Set-Content -force VERSION -PassThru
   - ps: build.ps1
 
 artifacts:
