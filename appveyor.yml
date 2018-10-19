@@ -5,8 +5,6 @@ os: Visual Studio 2017
 environment:
   GOPATH: c:\gopath
   matrix:
-    - MSI_ARCH: amd64
-      GOARCH: amd64
     - MSI_ARCH: 386
       GOARCH: 386
 
@@ -21,7 +19,7 @@ clone_folder: c:\gopath\src\github.com\tony-harverson-moonpig\iislog-prometheus-
 #
 build_script:
 #  - ps: gitversion /output json /showvariable FullSemVer | Set-Content -force VERSION -PassThru
-  - ps: build.ps1
+  - ps: ./build.ps1
 #
 #artifacts:
 #  - name: Executable
